@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <title>Applying Visual Design</title>
+    <style>
+        body{
+            margin: 0px 330px 0px 330px;
+            background-color: #ffdd00;
+        }
+        h1:hover{
+            color: red;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Teko', sans-serif;
+        }
+        label:hover{
+            color: red;
+        }
+        #tarkata{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            float: left;
+            position: relative;
+            margin-right: 10px;
+            padding: 0 10px 0 10px;
+            top: 1px;
+            font-family: 'Teko', sans-serif;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        #cage{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            float: left;
+            position: relative;
+            margin-right: 10px;
+            padding: 0 10px 0 10px;
+            bottom: 17px;
+            font-family: 'Teko', sans-serif;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        #kangaceiro{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.23);
+            float: left;
+            position: relative;
+            padding: 0 10px 0 10px;
+            bottom: 35px;
+            font-family: 'Teko', sans-serif;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 20px;
+        }
+        #button:hover{
+            color: red;
+        }
+        #button{
+            position: relative;
+            margin: 100px 0px 200px 300px;
+            text-transform: uppercase;
+            font-family: 'Teko', sans-serif;
+            font-size: 30px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Choose all you'd rather not Fight</h1>
+    <form>
+        <label for="Baraka" id="tarkata">
+            <input id="baraka" type="checkbox" name="fighters" value="baraka">Baraka <br><!--the value property 
+            will allow the data of the selected checkbox to be spefically acknowledged-->
+            <img src="https://i.imgur.com/Thpgvcn.jpeg" height="300px" width="200px" alt="a pic of Baraka">
+        </label><br>
+        <label for="Johnny" id="cage">
+            <input id="Johnny" type="checkbox" name="fighters" value="johnny">Johnny <br>
+            <img src="https://i.imgur.com/KLRRWbF.jpeg" height="300px" width="200px" alt="a pic of Johnny">
+        </label><br>
+        <label for="Kano" id="kangaceiro">
+            <input id="Kano" type="checkbox" name="fighters" value="kano">Kano <br>
+            <img src="https://i.imgur.com/KlojddF.jpeg" height="300px" width="200px" alt="a pic of Kano">
+        </label><br>
+
+        <button type="submit" id="button"><strong>Chosen</strong></button>
+    </form>
+</body>
+</html>
